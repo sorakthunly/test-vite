@@ -1,0 +1,13 @@
+{
+	"private": true,
+	"workspaces": [
+		"apps/*",
+		"packages/*"
+	],
+	"scripts": {
+		"customer": "yarn workspace customer",
+		"one": "yarn workspace test-one",
+		"packages:build": "yarn one build && yarn two build",
+		"two": "yarn workspace test-two"
+	}
+}
